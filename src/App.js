@@ -32,6 +32,7 @@ class App extends Component {
                     </ol>
                     <b style={{color:'red'}}>Note: Commit every step</b>
                     <p>Hint: Keep in mind that JavaScript strings are basically arrays</p>
+                    <p>Estimated time for completing kata: 27 minutes or less, practice makes perfect!</p>
                 </div>
             </div>
         );
