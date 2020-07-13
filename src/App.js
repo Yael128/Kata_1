@@ -18,6 +18,7 @@ class App extends Component {
                         <li>Create another functional component CharComponent and style it as an inline box
                             (display: inline-block, padding: 16px, text-align: center, margin: 16px, border: 1px solid
                             black).
+                            this style should be in a independent CSS and imported
                         </li>
                         <li>
                             Render a list of CharComponents where each CharComponent receives a different letter of the
@@ -25,7 +26,9 @@ class App extends Component {
                             (in the initial input field) as a prop.
                         </li>
                         <li>When you click a CharComponent, it should be removed from the entered text.</li>
+                        <li>Add a new component that keeps track of how many times user clicked any of the chars and which char was it</li>
                         <li>Convert App Component to a stateful functional component</li>
+                        <li>Give this list inline style to make it pretty</li>
                     </ol>
                     <p>Hint: Keep in mind that JavaScript strings are basically arrays!</p>
                 </div>
