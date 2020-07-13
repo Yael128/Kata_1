@@ -30,7 +30,8 @@ class App extends Component {
                         <li>Convert App Component to a stateful functional component</li>
                         <li>Give this list inline style to make it pretty</li>
                     </ol>
-                    <p>Hint: Keep in mind that JavaScript strings are basically arrays!</p>
+                    <b style={{color:'red'}}>Note: Commit every step</b>
+                    <p>Hint: Keep in mind that JavaScript strings are basically arrays</p>
                 </div>
             </div>
         );
