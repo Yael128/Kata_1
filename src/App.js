@@ -3,6 +3,7 @@ import './App.css';
 
 import Validation from './components/Validation';
 import CharComponent from './components/CharComponent';
+import ClickTracker from './components/ClickTracker';
 
 class App extends Component {
     constructor(props) {
@@ -32,9 +33,7 @@ class App extends Component {
                 <input value={this.state.text} onChange={this.handleChange}></input>
                 <p>{this.state.text.length}</p>
                 <Validation textLength={this.state.text.length}/>
-                {this.state.text.split('').map((letter, index) => 
-                    <CharComponent key={index} index={index} letter={letter} removeLetter={this.removeLetter}/>
-                )}
+                <ClickTracker text={this.state.text} removeLetter={this.removeLetter}/>
             </div>
         );
     }
