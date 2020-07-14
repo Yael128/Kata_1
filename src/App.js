@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 import Validation from './components/Validation';
@@ -19,7 +19,7 @@ function App() {
         setText(fSting + sString)
     }
         return (
-            <div>
+            <div className="App">
                 <input value={text} onChange={handleChange}></input>
                 <p>{text.length}</p>
                 <Validation textLength={text.length}/>

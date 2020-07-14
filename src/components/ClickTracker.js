@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CharComponent from './CharComponent';
+import './ClickTracker.css'
 
 function ClickTracker(props) {
     const [clicks, setClicks] = useState(0)
@@ -14,8 +15,10 @@ function ClickTracker(props) {
             {props.text.split('').map((letter, index) => 
                 <CharComponent key={index} index={index} letter={letter} removeLetter={props.removeLetter} handleClick={handleClick}/>
             )}
-            <p>Clicks: {clicks}</p>
-            <p>Chars deleted: {charClick}</p>
+            <div>
+                <p className="pretty">Clicks: {clicks}</p><br/><br/>
+                <p className="pretty">Chars deleted: {charClick}</p>
+            </div>
         </div>
     );
 }
