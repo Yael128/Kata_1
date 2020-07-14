@@ -21,7 +21,7 @@ class App extends Component {
             <div>
                 <input onChange={this.handleChange}></input>
                 <p>{this.state.text.length}</p>
-                <Validation text={this.state.text.length}/>
+                <Validation textLength={this.state.text.length}/>
             </div>
         );
     }

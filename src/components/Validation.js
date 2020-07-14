@@ -3,7 +3,7 @@ import React from 'react';
 function Validation(props) {
     return (
         <div>
-            <p>{props.text}</p>
+            <p>{props.textLength < 5 ? "Text too short" : "Text long enough"}</p>
         </div>
     );
 }
