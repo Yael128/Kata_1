@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
+import Validation from './components/Validation';
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -19,6 +21,7 @@ class App extends Component {
             <div>
                 <input onChange={this.handleChange}></input>
                 <p>{this.state.text.length}</p>
+                <Validation text={this.state.text.length}/>
             </div>
         );
     }
